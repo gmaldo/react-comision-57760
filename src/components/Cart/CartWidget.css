@@ -1,0 +1,23 @@
+/* Estilos para el widget del carrito de compras */
+.cart-widget {
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+
+.cart-widget img {
+    width: 30px; 
+    margin-right: 5px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color:red; /*burbuja*/
+    color: white; /*Texto*/
+    border-radius: 50%; /* redonda */
+    padding: 2px 6px; /* borde interior */
+    font-size: 0.75rem; 
+    margin-right: 5px;
+}

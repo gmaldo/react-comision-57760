@@ -1,0 +1,19 @@
+/* Estilos generales de la NavBar */
+.navbar {
+    background-color: #f8f8f8; /* Color de fondo claro */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+/* Estilos para los ítems de navegación */
+.nav-item {
+    margin-left: 15px; /* Espaciado entre ítems */
+}
+
+.nav-link {
+    color: #555; /* Color del texto de los ítems */
+    transition: color 0.3s ease-in-out; /* Transición suave para el color */
+}
+
+.nav-link:hover {
+    color: blue; /* Color al pasar el ratón sobre el ítem */
+}
