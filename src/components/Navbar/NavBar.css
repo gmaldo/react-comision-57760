@@ -2,6 +2,7 @@
 .navbar {
     background-color: #f8f8f8; /* Color de fondo claro */
     padding: 10px 20px; /* Espaciado interno */
+    padding-right: 10px;
 }
 
 /* Estilos para los ítems de navegación */
