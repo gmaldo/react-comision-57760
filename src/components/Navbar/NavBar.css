@@ -5,11 +5,16 @@
     padding-right: 10px;
 }
 
-.nav-item {
+.nav-item a{
     margin-left: 15px; 
 }
 
-.nav-link {
+.nav-link a{
     color: #555;
     transition: color 0.3s ease-in-out; 
+    text-decoration: none;
+}
+
+a.active {
+    color: red;
 }
