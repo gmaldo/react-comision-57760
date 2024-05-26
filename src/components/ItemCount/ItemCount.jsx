@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ItemCount.css'; 
 
 function Counter({ max , onAdd, updateQuantity }) {
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
 
     const handleIncrement = () => {
         if (count < max) {
@@ -13,9 +13,9 @@ function Counter({ max , onAdd, updateQuantity }) {
     };
 
     const handleDecrement = () => {
-        if (count > 0) {
+        if (count > 1) {
             setCount(count - 1);
-            updateQuantity(count + 1);
+            updateQuantity(count - 1);
         }
     };
 
