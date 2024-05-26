@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "Mochila Fjallraven - Foldsack No. 1, Apta para Laptops de 15 Pulgadas",
+    "price": 109.95,
+    "description": "Tu mochila perfecta para el uso diario y paseos por el bosque. Guarda tu laptop (hasta 15 pulgadas) en el compartimento acolchado, junto con tus objetos diarios.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 2,
+    "title": "Camiseta de Algodón Slim Fit",
+    "price": 22.3,
+    "description": "Camiseta slim fit de algodón puro, ideal para el día a día. Cómoda y transpirable, perfecta para cualquier ocasión.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 3,
+    "title": "Cartera de Cuero con Protección RFID",
+    "price": 48.99,
+    "description": "Cartera de cuero genuino con protección RFID para mantener segura tu información personal.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 4,
+    "title": "Reloj Inteligente con GPS y Monitor de Ritmo Cardíaco",
+    "price": 199.99,
+    "description": "Mantente conectado y monitoriza tu salud con este reloj inteligente. GPS integrado y seguimiento de actividad física.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 5,
+    "title": "Audífonos Inalámbricos con Cancelación de Ruido",
+    "price": 59.99,
+    "description": "Disfruta de tu música sin interrupciones con estos audífonos inalámbricos, equipados con cancelación activa de ruido.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 6,
+    "title": "Pantalones de Yoga Flexibles y Confortables",
+    "price": 29.98,
+    "description": "Pantalones de yoga hechos con material elástico y transpirable. Confort y estilo en tus sesiones de yoga o cualquier actividad física.",
+    "category": "women's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 7,
+    "title": "Suéter de Lana Merino",
+    "price": 55.99,
+    "description": "Mantente cálido y cómodo con este suéter de lana merino, ideal para el clima frío.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 8,
+    "title": "Bolso de Mano Elegante para Mujer",
+    "price": 70.99,
+    "description": "Elegante bolso de mano para mujer, perfecto para cualquier ocasión especial o para el uso diario.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 9,
+    "title": "Gafas de Sol Polarizadas",
+    "price": 15.99,
+    "description": "Protege tus ojos con estilo con estas gafas de sol polarizadas, ideales para días soleados.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 10,
+    "title": "Tableta Gráfica para Diseño Digital",
+    "price": 199.99,
+    "description": "Expresa tu creatividad con esta tableta gráfica, perfecta para dibujo y diseño digital.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 11,
+    "title": "Blusa de Seda para Mujer",
+    "price": 68.4,
+    "description": "Blusa de seda suave y elegante, con un diseño versátil que se ajusta tanto a eventos formales como a salidas casuales.",
+    "category": "women's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 12,
+    "title": "Jeans Clásicos Rectos",
+    "price": 45.1,
+    "description": "Jeans clásicos con corte recto, fabricados con denim de alta calidad. Durabilidad y comodidad garantizada.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 13,
+    "title": "Sombrero de Paja Estilo Panamá",
+    "price": 22.99,
+    "description": "Sombrero de paja estilo Panamá, ideal para protegerte del sol mientras disfrutas de un aspecto elegante.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 14,
+    "title": "Cámara Digital SLR con Lentes Intercambiables",
+    "price": 649.99,
+    "description": "Captura cada momento con esta cámara digital SLR. Incluye lentes intercambiables para adaptarse a cualquier situación de fotografía.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 15,
+    "title": "Chaqueta Impermeable para Aventuras al Aire Libre",
+    "price": 85.99,
+    "description": "Chaqueta impermeable y transpirable, diseñada para mantenerte seco y cómodo durante tus aventuras al aire libre.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 16,
+    "title": "Vestido de Noche Elegante",
+    "price": 49.99,
+    "description": "Vestido de noche elegante y sofisticado, perfecto para galas y eventos formales. Destaca con estilo y elegancia.",
+    "category": "women's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 17,
+    "title": "Pulsera de Actividad Fitness con Monitor de Sueño",
+    "price": 29.95,
+    "description": "Monitorea tu actividad diaria y tu sueño con esta pulsera fitness. Ligera y cómoda de llevar durante todo el día y la noche.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 18,
+    "title": "Billetera de Diseño Minimalista",
+    "price": 19.99,
+    "description": "Billetera de diseño minimalista, perfecta para llevar lo esencial sin abultar tu bolsillo.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 19,
+    "title": "Zapatillas de Running de Alta Performance",
+    "price": 95.99,
+    "description": "Zapatillas de running diseñadas para ofrecer el máximo rendimiento y comodidad durante tus carreras.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400"
+  },
+  {
+    "id": 20,
+    "title": "Set de Maquillaje Profesional Completo",
+    "price": 99.99,
+    "description": "Set de maquillaje profesional completo con todo lo necesario para lograr looks deslumbrantes.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400"
+  }
+]
