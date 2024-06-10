@@ -1,162 +1,182 @@
 [
   {
     "id": 1,
-    "title": "Mochila Fjallraven - Foldsack No. 1, Apta para Laptops de 15 Pulgadas",
-    "price": 109.95,
-    "description": "Tu mochila perfecta para el uso diario y paseos por el bosque. Guarda tu laptop (hasta 15 pulgadas) en el compartimento acolchado, junto con tus objetos diarios.",
-    "category": "men's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Smartwatch con GPS y monitoreo de actividad física",
+    "price": 250.00,
+    "description": "Reloj inteligente con GPS integrado y monitoreo de actividad física para mantenerte conectado y en forma.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 5
   },
   {
     "id": 2,
-    "title": "Camiseta de Algodón Slim Fit",
-    "price": 22.3,
-    "description": "Camiseta slim fit de algodón puro, ideal para el día a día. Cómoda y transpirable, perfecta para cualquier ocasión.",
-    "category": "men's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Auriculares Bluetooth con cancelación de ruido",
+    "price": 150.00,
+    "description": "Disfruta de un sonido de alta calidad sin interrupciones con estos auriculares Bluetooth con cancelación de ruido activa.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 0
   },
   {
     "id": 3,
-    "title": "Cartera de Cuero con Protección RFID",
-    "price": 48.99,
-    "description": "Cartera de cuero genuino con protección RFID para mantener segura tu información personal.",
-    "category": "jewelery",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Cámara digital 4K",
+    "price": 850.00,
+    "description": "Captura tus momentos favoritos con detalles increíbles gracias a esta cámara digital 4K de última generación.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 8
   },
   {
     "id": 4,
-    "title": "Reloj Inteligente con GPS y Monitor de Ritmo Cardíaco",
-    "price": 199.99,
-    "description": "Mantente conectado y monitoriza tu salud con este reloj inteligente. GPS integrado y seguimiento de actividad física.",
+    "title": "Teclado mecánico retroiluminado",
+    "price": 120.00,
+    "description": "Teclado mecánico con retroiluminación personalizable y teclas de alta respuesta para una experiencia de escritura superior.",
     "category": "electronics",
-    "image": "http://via.placeholder.com/640x400"
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 12
   },
   {
     "id": 5,
-    "title": "Audífonos Inalámbricos con Cancelación de Ruido",
-    "price": 59.99,
-    "description": "Disfruta de tu música sin interrupciones con estos audífonos inalámbricos, equipados con cancelación activa de ruido.",
-    "category": "electronics",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Anillo de oro con zafiro",
+    "price": 400.00,
+    "description": "Elegante anillo de oro con un zafiro central, perfecto para ocasiones especiales o como un regalo significativo.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 9
   },
   {
     "id": 6,
-    "title": "Pantalones de Yoga Flexibles y Confortables",
-    "price": 29.98,
-    "description": "Pantalones de yoga hechos con material elástico y transpirable. Confort y estilo en tus sesiones de yoga o cualquier actividad física.",
-    "category": "women's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Collar de plata esterlina",
+    "price": 100.00,
+    "description": "Collar delicado de plata esterlina, ideal para complementar cualquier atuendo con un toque de elegancia.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 14
   },
   {
     "id": 7,
-    "title": "Suéter de Lana Merino",
-    "price": 55.99,
-    "description": "Mantente cálido y cómodo con este suéter de lana merino, ideal para el clima frío.",
-    "category": "men's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Pulsera de cuero artesanal",
+    "price": 50.00,
+    "description": "Pulsera de cuero hecha a mano con un diseño único y rústico, adecuada tanto para hombres como para mujeres.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 3
   },
   {
     "id": 8,
-    "title": "Bolso de Mano Elegante para Mujer",
-    "price": 70.99,
-    "description": "Elegante bolso de mano para mujer, perfecto para cualquier ocasión especial o para el uso diario.",
+    "title": "Pendientes de perlas",
+    "price": 75.00,
+    "description": "Pendientes de perlas clásicos que ofrecen un look sofisticado para cualquier ocasión, desde una boda hasta una noche de gala.",
     "category": "jewelery",
-    "image": "http://via.placeholder.com/640x400"
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 15
   },
   {
     "id": 9,
-    "title": "Gafas de Sol Polarizadas",
-    "price": 15.99,
-    "description": "Protege tus ojos con estilo con estas gafas de sol polarizadas, ideales para días soleados.",
-    "category": "jewelery",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Camisa de algodón orgánico",
+    "price": 80.00,
+    "description": "Camisa hecha de algodón orgánico, suave y cómoda, perfecta para el uso diario o informal.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 11
   },
   {
     "id": 10,
-    "title": "Tableta Gráfica para Diseño Digital",
-    "price": 199.99,
-    "description": "Expresa tu creatividad con esta tableta gráfica, perfecta para dibujo y diseño digital.",
-    "category": "electronics",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Chaqueta de cuero",
+    "price": 300.00,
+    "description": "Chaqueta de cuero genuino, estilo biker, ideal para una apariencia audaz y moderna.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 7
   },
   {
     "id": 11,
-    "title": "Blusa de Seda para Mujer",
-    "price": 68.4,
-    "description": "Blusa de seda suave y elegante, con un diseño versátil que se ajusta tanto a eventos formales como a salidas casuales.",
-    "category": "women's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Jeans ajustados",
+    "price": 90.00,
+    "description": "Jeans ajustados que ofrecen comodidad y estilo, con un diseño duradero para el uso diario.",
+    "category": "men's clothing",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 13
   },
   {
     "id": 12,
-    "title": "Jeans Clásicos Rectos",
-    "price": 45.1,
-    "description": "Jeans clásicos con corte recto, fabricados con denim de alta calidad. Durabilidad y comodidad garantizada.",
+    "title": "Zapatillas deportivas",
+    "price": 130.00,
+    "description": "Zapatillas deportivas diseñadas para ofrecer máximo confort y soporte durante actividades físicas o para el día a día.",
     "category": "men's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 6
   },
   {
     "id": 13,
-    "title": "Sombrero de Paja Estilo Panamá",
-    "price": 22.99,
-    "description": "Sombrero de paja estilo Panamá, ideal para protegerte del sol mientras disfrutas de un aspecto elegante.",
-    "category": "jewelery",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Vestido de cóctel",
+    "price": 200.00,
+    "description": "Vestido de cóctel elegante y contemporáneo, perfecto para eventos formales o celebraciones importantes.",
+    "category": "women's clothing",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 4
   },
   {
     "id": 14,
-    "title": "Cámara Digital SLR con Lentes Intercambiables",
-    "price": 649.99,
-    "description": "Captura cada momento con esta cámara digital SLR. Incluye lentes intercambiables para adaptarse a cualquier situación de fotografía.",
-    "category": "electronics",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Blusa de seda",
+    "price": 150.00,
+    "description": "Blusa de seda ligera y fluida, con un corte que favorece y aporta un toque de lujo a cualquier conjunto.",
+    "category": "women's clothing",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 1
   },
   {
     "id": 15,
-    "title": "Chaqueta Impermeable para Aventuras al Aire Libre",
-    "price": 85.99,
-    "description": "Chaqueta impermeable y transpirable, diseñada para mantenerte seco y cómodo durante tus aventuras al aire libre.",
-    "category": "men's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Falda plisada midi",
+    "price": 110.00,
+    "description": "Falda plisada midi, versátil y de moda, ideal para la oficina o para salir por la ciudad.",
+    "category": "women's clothing",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 10
   },
   {
     "id": 16,
-    "title": "Vestido de Noche Elegante",
-    "price": 49.99,
-    "description": "Vestido de noche elegante y sofisticado, perfecto para galas y eventos formales. Destaca con estilo y elegancia.",
+    "title": "Zapatos de tacón alto",
+    "price": 140.00,
+    "description": "Zapatos de tacón alto con un diseño clásico y elegante, aseguran una presencia impactante en cualquier evento.",
     "category": "women's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 2
   },
   {
     "id": 17,
-    "title": "Pulsera de Actividad Fitness con Monitor de Sueño",
-    "price": 29.95,
-    "description": "Monitorea tu actividad diaria y tu sueño con esta pulsera fitness. Ligera y cómoda de llevar durante todo el día y la noche.",
-    "category": "electronics",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Reloj analógico minimalista",
+    "price": 180.00,
+    "description": "Reloj analógico con un diseño minimalista, combina funcionalidad y estilo moderno.",
+    "category": "jewelery",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 14
   },
   {
     "id": 18,
-    "title": "Billetera de Diseño Minimalista",
-    "price": 19.99,
-    "description": "Billetera de diseño minimalista, perfecta para llevar lo esencial sin abultar tu bolsillo.",
-    "category": "jewelery",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Tablet de última generación",
+    "price": 400.00,
+    "description": "Tablet de última generación con pantalla de alta resolución y rendimiento potente para entretenimiento y trabajo.",
+    "category": "electronics",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 10
   },
   {
     "id": 19,
-    "title": "Zapatillas de Running de Alta Performance",
-    "price": 95.99,
-    "description": "Zapatillas de running diseñadas para ofrecer el máximo rendimiento y comodidad durante tus carreras.",
+    "title": "Cinturón de cuero clásico",
+    "price": 60.00,
+    "description": "Cinturón de cuero clásico, duradero y elegante, esencial en cualquier armario.",
     "category": "men's clothing",
-    "image": "http://via.placeholder.com/640x400"
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 9
   },
   {
     "id": 20,
-    "title": "Set de Maquillaje Profesional Completo",
-    "price": 99.99,
-    "description": "Set de maquillaje profesional completo con todo lo necesario para lograr looks deslumbrantes.",
-    "category": "jewelery",
-    "image": "http://via.placeholder.com/640x400"
+    "title": "Perfume floral para mujer",
+    "price": 95.00,
+    "description": "Perfume con aroma floral intenso, perfecto para la mujer moderna que desea destacar con una fragancia distinguida.",
+    "category": "women's clothing",
+    "image": "http://via.placeholder.com/640x400",
+    "stock": 8
   }
 ]

@@ -4,8 +4,7 @@ import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
 
 const ItemDetail = ({product}) => {
-    //la api no tiene stock asi lo simulo
-    const stock = Math.random() * (100 - 10) + 10;
+
     //Consigna:
     const [quantity, setQuantity] = useState(1)
     const [showCounter, setShowCounter] = useState(true)
@@ -29,7 +28,7 @@ const ItemDetail = ({product}) => {
                     <p className="text-muted">{product.description}</p>
                     <p className="price">Precio: ${product.price}</p>
                     {showCounter ?
-                        <ItemCount max={stock} onAdd={onAdd} updateQuantity={setQuantity}/>
+                        <ItemCount max={product.stock} onAdd={onAdd} updateQuantity={setQuantity}/>
                         :
                         <Link to='/cart'><button className="btn btn-primary">Comprar</button></Link>
                         //El botón de terminar mi compra debe poder navegar a un componente vacío por el momento en la ruta ‘/cart
