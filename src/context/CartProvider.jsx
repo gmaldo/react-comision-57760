@@ -20,7 +20,6 @@ function CartProvider({ children }){
         } else {
             setCartItems([...cartItems, { ...product, quantity: quantity }]);
         }    
-        console.log(cartItems);
     }
 
     const removeFromCart = (id) => {
