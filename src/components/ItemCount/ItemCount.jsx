@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import './ItemCount.css'; 
 
-function Counter({ max , onAdd, updateQuantity }) {
-    const [count, setCount] = useState(1);
-
+function Counter({ count, max , onAdd, updateQuantity }) {
     const handleIncrement = () => {
         if (count < max) {
-            setCount(count + 1);
-            //update en el estado interno del ItemDetail
             updateQuantity(count + 1);
         }
     };
 
     const handleDecrement = () => {
         if (count > 1) {
-            setCount(count - 1);
             updateQuantity(count - 1);
         }
     };

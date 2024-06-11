@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavBar from '../components/Navbar/NavBar'
 import ItemListContainer from '../components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer'
-import Cart from '../components/Cart/Cart'
+import CartItemContainer from '../components/CartItemContainer/CartItemContainer'
 
 const AppRouter = () => {
     const message = "Este eshop te hace feliz, Bienvenido"
@@ -14,7 +14,7 @@ const AppRouter = () => {
                     <Route path="/" element={<ItemListContainer messaje={message}/>}/>
                     <Route path="/category/:categoryid" element={<ItemListContainer/>}/>
                     <Route path="/item/:id" element={<ItemDetailContainer/>}/>
-                    <Route path="/cart" element={<Cart/>}/>
+                    <Route path="/cart" element={<CartItemContainer/>}/>
                 </Routes>
         </BrowserRouter> 
     )

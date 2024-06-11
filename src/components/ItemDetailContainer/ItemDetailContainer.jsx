@@ -3,10 +3,13 @@ import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import Loader from '../Loader/Loader'
 import { getDoc,getFirestore, doc } from 'firebase/firestore'
+import { set } from 'firebase/database'
+import ProductNotFound from '../ProductNotFound/ProductNotFound'
 
 const ItemDetailContainer = () => {
 
   const [product, setProduct] = useState(null)
+  const [found, setFound] = useState(true)
   const {id}  = useParams()
 
   const fetchData = async(id) => {
@@ -14,7 +17,12 @@ const ItemDetailContainer = () => {
       const db = getFirestore()
       const docRef = doc(db,"products",id)
       const docSnap = await getDoc(docRef)
-      setProduct({id:docSnap.id,...docSnap.data()})
+      if (docSnap.exists()) {
+        setProduct({id:docSnap.id,...docSnap.data()})
+        setFound(true)
+      } else {
+        setFound(false)
+      }
     }catch(error){
       console.log("Error al obtener los productos", error)
     }
@@ -26,6 +34,7 @@ const ItemDetailContainer = () => {
 
   }, [id])
 
+  if(!found) return <ProductNotFound/>
   return (
     <div>
         {product == null ? 

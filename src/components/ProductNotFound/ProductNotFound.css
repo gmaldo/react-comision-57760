@@ -1,0 +1,12 @@
+.product-not-found {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8d7da; /* Color de fondo rosa claro para error */
+    color: #721c24; /* Color de texto rojo oscuro para contraste */
+    border: 1px solid #f5c6cb; /* Borde más claro */
+}
+
+.icon {
+    font-size: 48px; /* Tamaño grande para el icono */
+    margin-bottom: 20px;
+}

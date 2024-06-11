@@ -1,19 +1,16 @@
-import React, { useState } from 'react'
+import { useContext, useState } from 'react'
 import "./ItemDetail.css"
 import ItemCount from '../ItemCount/ItemCount';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/cartContext';
 
 const ItemDetail = ({product}) => {
-
-    //Consigna:
     const [quantity, setQuantity] = useState(1)
     const [showCounter, setShowCounter] = useState(true)
+    const {addToCart} = useContext(CartContext)
     
-    //Cuando ItemCount emita un evento onAdd almacenarás ese valor en un estado interno del ItemDetail para hacer desaparecer el ItemCount
-    //en mi caso el estado interno del ItemDetail es quatity (un hook), por el momento onAdd solo muestra ese valor
-    //para hacer desaparecer el ItemCount uso otro hook showCounter
     const onAdd = () => {
-        alert(`Producto agregado ${quantity} al carrito`);
+        addToCart(product,quantity)
         setShowCounter(false)
     }
 
@@ -28,9 +25,9 @@ const ItemDetail = ({product}) => {
                     <p className="text-muted">{product.description}</p>
                     <p className="price">Precio: ${product.price}</p>
                     {showCounter ?
-                        <ItemCount max={product.stock} onAdd={onAdd} updateQuantity={setQuantity}/>
+                        <ItemCount count = {quantity} max={product.stock} onAdd={onAdd} updateQuantity={setQuantity}/>
                         :
-                        <Link to='/cart'><button className="btn btn-primary">Comprar</button></Link>
+                        <Link to='/cart'><button className="btn btn-primary">Ir al carrito</button></Link>
                         //El botón de terminar mi compra debe poder navegar a un componente vacío por el momento en la ruta ‘/cart
                     }
                 </div>

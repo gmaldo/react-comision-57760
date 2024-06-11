@@ -11,7 +11,7 @@ function CartWidget() {
         <div className="cart-widget">
             <div className="position-relative">
                 <img src={cartIcon} alt="Carrito" />  
-                <span className="cart-count">{cart.length}</span>  
+                <span className="cart-count">3</span>  
             </div>
         </div>
     );

@@ -9,9 +9,27 @@ import { CartContext } from "./cartContext";
 */
 function CartProvider({ children }){
 
-    const [cart, setCart] = useState(['1','2']) //--> Es un custom provider
+    const [cartItems, setCartItems] = useState([]) //--> Es un custom provider
+    
+    const addToCart = (product,quantity) => {
+        const productExists = cartItems.find(item => item.id === product.id);
+        if (productExists) {
+            setCartItems(cartItems.map(item =>
+                item.id === product.id ? { ...item, quantity: quantity  } : item
+            ))
+        } else {
+            setCartItems([...cartItems, { ...product, quantity: quantity }]);
+        }    
+        console.log(cartItems);
+    }
+
+    const removeFromCart = (id) => {
+        setCartItems(prevItems => prevItems.filter(item => item.id !== id));
+    };
+
+
     return(
-        <CartContext.Provider value={{cart,setCart}}>
+        <CartContext.Provider value={{cartItems,setCartItems,addToCart,removeFromCart}}>
             {children}
         </CartContext.Provider>
     )
