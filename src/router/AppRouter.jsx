@@ -4,6 +4,7 @@ import NavBar from '../components/Navbar/NavBar'
 import ItemListContainer from '../components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from '../components/ItemDetailContainer/ItemDetailContainer'
 import CartItemContainer from '../components/CartItemContainer/CartItemContainer'
+import Checkout from '../components/Checkout/Checkout'
 
 const AppRouter = () => {
     const message = "Este eshop te hace feliz, Bienvenido"
@@ -15,6 +16,7 @@ const AppRouter = () => {
                     <Route path="/category/:categoryid" element={<ItemListContainer/>}/>
                     <Route path="/item/:id" element={<ItemDetailContainer/>}/>
                     <Route path="/cart" element={<CartItemContainer/>}/>
+                    <Route path="/checkout" element={<Checkout/>}/>
                 </Routes>
         </BrowserRouter> 
     )
