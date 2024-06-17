@@ -28,3 +28,15 @@
 .checkout-button:hover {
     background-color: #45a049;
 }
+
+.empty-cart {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8d7da; /* Color de fondo rosa claro para error */
+    color: #721c24; /* Color de texto rojo oscuro para contraste */
+    border: 1px solid #f5c6cb; /* Borde más claro */
+}
+
+.cart-icon {
+    width: 50px
+}

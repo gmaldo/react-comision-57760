@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { CartContext } from '../../context/cartContext'
 import CartItem from '../CartItem/CartItem'
+import cartIcon from '../../assets/cartIcon.svg';
 import './CartItemContainer.css'
 
 
@@ -10,8 +11,17 @@ const CartItemContainer = () => {
      
     const handleCheckout = () => {
         console.log("Procediendo al checkout...");
-    };
+    }
 
+    if(cartItems.length === 0 ){
+        return (
+            <div className="empty-cart text-center">
+                <img className='cart-icon' src={cartIcon} alt="Carrito" />  
+                <h1>Carrito Vacío</h1>
+                <p>No tienes ningun producto en el carrito.</p>
+            </div>
+        )
+    }
     return (
         <div>
             <div className="cart-items-container">
