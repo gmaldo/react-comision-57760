@@ -25,7 +25,11 @@ function Checkout() {
     const handleSubmit = (e) => {
         e.preventDefault();
         let validationErrors = {};
-
+        
+        // Validar teléfono 10 digitos 
+        if (!/^\d{10}$/.test(formData.phone)) {
+            validationErrors.phone = 'El teléfono debe contener 10 dígitos.';
+        }
         // Validar emails
         if (!validateEmail(formData.email)) {
             validationErrors.email = 'El email no es válido';
@@ -49,6 +53,7 @@ function Checkout() {
                 value={formData.firstName}
                 onChange={handleInputChange}
                 placeholder="Nombre"
+                required
             />
             <input
                 type="text"
@@ -56,6 +61,7 @@ function Checkout() {
                 value={formData.lastName}
                 onChange={handleInputChange}
                 placeholder="Apellido"
+                required
             />
             <input
                 type="text"
@@ -63,23 +69,27 @@ function Checkout() {
                 value={formData.phone}
                 onChange={handleInputChange}
                 placeholder="Teléfono"
+                required
             />
+            {errors.phone && <p className='error'>{errors.phone}</p>}
             <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleInputChange}
                 placeholder="Email"
+                required
             />
-            {errors.email && <p>{errors.email}</p>}
+            {errors.email && <p className='error'>{errors.email}</p>}
             <input
                 type="email"
                 name="confirmEmail"
                 value={formData.confirmEmail}
                 onChange={handleInputChange}
                 placeholder="Confirmar Email"
+                required
             />
-            {errors.confirmEmail && <p>{errors.confirmEmail}</p>}
+            {errors.confirmEmail && <p className='error'>{errors.confirmEmail}</p>}
             <button type="submit">Registrar</button>
         </form>
     );

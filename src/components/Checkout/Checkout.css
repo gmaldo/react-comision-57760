@@ -20,7 +20,7 @@ input[type="email"] {
 }
 
 /* Estilos para los mensajes de error */
-p {
+.error{
     color: red;
     font-size: 0.8rem;
     margin-top: -5px;

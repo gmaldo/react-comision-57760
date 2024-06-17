@@ -24,10 +24,13 @@ const ItemDetail = ({product}) => {
                     <h2>{product.title}</h2>
                     <p className="text-muted">{product.description}</p>
                     <p className="price">Precio: ${product.price}</p>
-                    {showCounter ?
+                    {product.stock === 0 ?
+                        <p className="text-danger">Sin stock</p> 
+                        :
+                        showCounter ?
                         <ItemCount count = {quantity} max={product.stock} onAdd={onAdd} updateQuantity={setQuantity}/>
                         :
-                        <Link to='/cart'><button className="btn btn-primary">Ir al carrito</button></Link>
+                            <Link to='/cart'><button className="btn btn-primary">Ir al carrito</button></Link>
                         //El botón de terminar mi compra debe poder navegar a un componente vacío por el momento en la ruta ‘/cart
                     }
                 </div>
