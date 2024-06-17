@@ -7,6 +7,8 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Cart from './components/Cart/Cart'
 import AppRouter from './router/AppRouter'
 import CartProvider from './context/CartProvider'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 

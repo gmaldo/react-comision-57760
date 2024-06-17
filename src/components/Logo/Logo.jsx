@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <div><Link to="/"><img className="logo" src={shopLogo} alt="ecommerce logo" /></Link></div>
+    <Link to="/"><img className="logo" src={shopLogo} alt="ecommerce logo" /></Link>
   )
 }
 

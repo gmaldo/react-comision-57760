@@ -1,63 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './NavBar.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../Logo/Logo';
 import CartWidget from '../CartWidget/CartWidget';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 function NavBar() {
-    const categories = ["electronics","jewelery","men's clothing","women's clothing"]
+    const [isOpen, setIsOpen] = useState(false)
+    const categories = ["electronics", "jewelery", "men's clothing", "women's clothing"];
+
+      
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <Logo/>
-            <div className="navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                    <li className="nav-item nav-link">
-                        <NavLink
-                            to={`/category/${categories[0]}`}
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
-                            }
-                            >
-                            {categories[0]}
-                        </NavLink>
-                    </li>
-                    <li className="nav-item nav-link">
-                        <NavLink
-                            to={`/category/${categories[1]}`}
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
-                            }
-                            >
-                            {categories[1]}
-                        </NavLink>
-                    </li>
-                    <li className="nav-item nav-link">
-                        <NavLink
-                            to={`/category/${categories[2]}`}
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
-                            }
-                            >
-                            {categories[2]}
-                        </NavLink>
-                    </li>
-                    <li className="nav-item nav-link">
-                        <NavLink
-                            to={`/category/${categories[3]}`}
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
-                            }
-                            >
-                            {categories[3]}
-                        </NavLink>
-                    </li>
-                </ul>
+        <nav className="navbar">
+            <Logo />
+            <div className="navbar-nav">
+                <div className="dropdown">
+                    <button className="dropbtn" onClick={() => setIsOpen(!isOpen)}>Categories</button>
+                    {isOpen && (
+                        <div className="dropdown-content">
+                            {categories.map((category,index) => (
+                                <NavLink key={index} to={`/category/${category}`} onClick={() => setIsOpen(false)}>
+                                    {category}
+                                </NavLink>
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
-            <Link  to="/cart"><CartWidget/></Link>
+            <NavLink to="/cart"><CartWidget /></NavLink>
         </nav>
     );
 }
 
-export default NavBar
+export default NavBar;

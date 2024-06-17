@@ -3,7 +3,6 @@ import './ItemListContainer.css'
 import Loader from '../Loader/Loader'
 import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
-import { CartContext } from '../../context/cartContext'
 import { getDocs,collection,getFirestore ,query,where} from 'firebase/firestore'
 const ItemListContainer = () => {
   
