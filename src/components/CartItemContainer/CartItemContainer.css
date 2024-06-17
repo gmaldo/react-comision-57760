@@ -6,3 +6,25 @@
 
     padding: 20px;
 }
+/* CartItemContainer.css */
+.total-price {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: right;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ccc;
+}
+
+.checkout-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout-button:hover {
+    background-color: #45a049;
+}
