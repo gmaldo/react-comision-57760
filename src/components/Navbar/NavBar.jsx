@@ -3,12 +3,24 @@ import './NavBar.css';
 import Logo from '../Logo/Logo';
 import CartWidget from '../CartWidget/CartWidget';
 import { NavLink } from 'react-router-dom';
+import { collection, getDocs, getFirestore } from 'firebase/firestore';
 
 
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
-    const categories = ["electronics", "jewelery", "men's clothing", "women's clothing"];
-
+    //const categories = ["electronics", "jewelery", "men's clothing", "women's clothing"];
+    const [categories,setCategories] = useState([])
+    useEffect(() => {
+        (async ()=>{
+                const db = getFirestore()
+                const docsRef = collection(db,"categories")
+                const querySnapshot = await getDocs(docsRef)
+                const titles = querySnapshot.docs.map(doc => doc.data().title)
+                console.log(titles)
+                setCategories(titles)
+            }
+        )()
+    }, []);
       
     return (
         <nav className="navbar">
