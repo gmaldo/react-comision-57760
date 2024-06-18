@@ -7,12 +7,11 @@ import CartItemContainer from '../components/CartItemContainer/CartItemContainer
 import Checkout from '../components/Checkout/Checkout'
 
 const AppRouter = () => {
-    const message = "Este eshop te hace feliz, Bienvenido"
     return (
         <BrowserRouter>
             <NavBar/>
                 <Routes>
-                    <Route path="/" element={<ItemListContainer messaje={message}/>}/>
+                    <Route path="/" element={<ItemListContainer/>}/>
                     <Route path="/category/:categoryid" element={<ItemListContainer/>}/>
                     <Route path="/item/:id" element={<ItemDetailContainer/>}/>
                     <Route path="/cart" element={<CartItemContainer/>}/>

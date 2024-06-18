@@ -12,8 +12,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
-  const message = "Este eshop te hace feliz, Bienvenido"
-
   return (
     <>
       <CartProvider>

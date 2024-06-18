@@ -1,43 +1,54 @@
-/* Estilos generales para el formulario */
-form {
+/* Estilos para centrar el contenido de Checkout */
+.checkout-container {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #f9f9f9;
 }
 
-/* Estilos para los inputs */
-input[type="text"],
-input[type="email"] {
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.cart-summary-container {
+    width: 100%;
+    max-width: 600px; /* Ajusta esto según tus necesidades */
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-/* Estilos para los mensajes de error */
-.error{
-    color: red;
-    font-size: 0.8rem;
-    margin-top: -5px;
-    margin-bottom: 10px;
-}
-
-/* Estilos para el botón de enviar */
-button {
+.cart-summary {
+    background-color: #f7f7f7;
     padding: 10px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
 }
 
-button:hover {
-    background-color: #0056b3;
+.cart-summary strong {
+    color: #333;
+}
+
+.checkout-container h3 {
+    color: #333;
+    margin-top: 5px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.total-price h3 {
+    margin: 0;
+}
+
+.total-price p {
+    margin: 0;
+    font-weight: bold;
+    color: #007BFF;
 }

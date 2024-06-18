@@ -3,14 +3,36 @@ import { CartContext } from '../../context/cartContext'
 import CartItem from '../CartItem/CartItem'
 import cartIcon from '../../assets/cartIcon.svg';
 import './CartItemContainer.css'
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 
 const CartItemContainer = () => {
     const {cartItems, removeFromCart} = useContext(CartContext)
     const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    const navigate = useNavigate()
+
      
-    const handleCheckout = () => {
-        console.log("Procediendo al checkout...");
+    
+    const handleRemove = (id) => {
+        Swal.fire({
+            title: '¿Estás seguro?',
+            text: "Estás a punto de eliminar un producto del carrito.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sí, eliminar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire(
+                    'Eliminado!',
+                    'El producto ha sido eliminado del carrito.',
+                    'success'
+                )
+                removeFromCart(id)
+            }
+        })
     }
 
     if(cartItems.length === 0 ){
@@ -26,12 +48,12 @@ const CartItemContainer = () => {
         <div>
             <div className="cart-items-container">
                 {cartItems.map(item => (
-                    <CartItem key={item.id} item={item} onRemove={() => removeFromCart(item.id)} />
+                    <CartItem key={item.id} item={item} onRemove={() => handleRemove(item.id)} />
                 ))}
             </div>
             <div className="total-price">
                 <h2>Total: ${totalPrice.toFixed(2)}</h2>
-                <button onClick={handleCheckout} className="checkout-button">Proceder a la Compra</button>
+                <button onClick={()=>navigate('/checkout')} className="checkout-button">Proceder a la Compra</button>
             </div>
         </div>
     );
