@@ -16,7 +16,6 @@ function NavBar() {
                 const docsRef = collection(db,"categories")
                 const querySnapshot = await getDocs(docsRef)
                 const titles = querySnapshot.docs.map(doc => doc.data().title)
-                console.log(titles)
                 setCategories(titles)
             }
         )()

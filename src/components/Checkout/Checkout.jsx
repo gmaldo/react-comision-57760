@@ -13,7 +13,7 @@ const Checkout = () => {
 
     async function discountStock(){
         if(cartItems.lenght == 0){
-            return
+            return false
         }
 
         const db = getFirestore()
@@ -26,6 +26,14 @@ const Checkout = () => {
                     await updateDoc(itemRef, {
                         stock: foundItem.stock - item.quantity
                     })
+                    return true
+                }else{
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: `No hay suficiente stock de ${foundItem.title}`,
+                    })
+                    return false
                 }
             }
         }
@@ -40,7 +48,12 @@ const Checkout = () => {
             total:totalPrice,
             date: Timestamp.fromDate(new Date())
         }
-        discountStock()
+        let discounted = await discountStock()
+        if(!discounted){
+            navigate("/")
+            return
+        }
+
         const db = getFirestore()
         const docRef = collection(db,"orders")
         const number = await addDoc(docRef,order)
