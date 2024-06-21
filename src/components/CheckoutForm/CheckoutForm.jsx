@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './CheckoutForm.css'; // Asegúrate de que la ruta es correcta
+import Swal from 'sweetalert2';
 
 function Checkout({handleCheckout}) {
     const [formData, setFormData] = useState({
@@ -41,6 +42,17 @@ function Checkout({handleCheckout}) {
         setErrors(validationErrors);
 
         if (Object.keys(validationErrors).length === 0) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: "top-end",
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+            });
+            Toast.fire({
+                icon: "success",
+                title: "Orden Enviada"
+            });
             handleCheckout(formData);
         }
     };
@@ -90,14 +102,9 @@ function Checkout({handleCheckout}) {
                 required
             />
             {errors.confirmEmail && <p className='error'>{errors.confirmEmail}</p>}
-            <button type="submit">Registrar</button>
+            <button type="submit">Enviar la orden</button>
         </form>
     );
-}
-
-// Guardar los datos en la base de datos
-function saveToDatabase(data) {
-    console.log("Datos enviados a la base de datos:", data);
 }
 
 export default Checkout;
