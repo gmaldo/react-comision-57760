@@ -4,7 +4,14 @@
 Este proyecto es un sitio de ecommerce desarrollado como parte de la Comisión 57760 del curso de Coderhouse. El objetivo es proporcionar una experiencia completa de compra, permitiendo a los usuarios explorar productos, agregarlos al carrito y realizar compras.
 
 ## Demo
-![Demo](https://github.com/gmaldo/react-comision-57760/raw/main/public/data/demo.mov)
+![Demo](https://github.com/gmaldo/react-comision-57760/raw/main/public/data/demo.gif)
+En el demo podemos apreciar el funcionamiento del sitio:
+- Una vista del listado de productos
+- El filtrado de productos por categorias
+- Agregar un producto al carrito
+- Eliminar un producto del carrito
+- Generacion de Orden
+- Recepcion del numero de orden
 
 ## Tecnologías Utilizadas
 - **React + Vite**: Usado como herramienta de construcción para construir la interfaz de usuario con componentes reutilizables.
